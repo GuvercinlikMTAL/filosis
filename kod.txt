@@ -1,0 +1,152 @@
+html kodu
+
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title>Filosis</title>
+  <link href="Amykos.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <div id="govde">
+    <div id="ust_menu">
+      
+      <div id="ust_menu_sol">
+        <img src="image/saat.png" width="24" height="26" alt=""/>
+        Pzt - Cmt : 09:00 - 18:00
+        <img src="image/tel.png" width="26" height="24" alt=""/>
+        <img src="image/mail.png" width="26" height="28" alt=""/>
+      </div>
+      <div id="ust_menu_sag"> <img src="image/facebook.png" width="20" height="24" alt=""/> <img src="image/insta.png" width="20" height="24" alt=""/> </div>
+      
+      <!-- Float etkisini temizlemek için -->
+	  <div class="clear"></div>
+
+	  <!-- Temizle'nin hemen altında yer almalı -->
+	  <div id="logo_ve_menu">
+	    <div id="logo"><img src="image/logo-dark.png" width="207" height="60" alt=""/></div>
+		
+		 <div id="menu">
+  <ul>
+    <li><a href="#">Ana Sayfa</a></li>
+    <li><a href="#">Kurumsal</a></li>
+    <li><a href="#">Filo Kiralama</a></li>
+    <li><a href="#">Araç Kiralama</a></li>
+    <li><a href="#">Hizmetlerimiz</a></li>
+    <li><a href="#">İletişim</a></li>
+  </ul>
+</div>
+
+		</div>
+	  
+
+    </div>
+  </div>
+</body>
+</html>
+
+
+css kodu
+
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#govde {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+#ust_menu {
+	background-color: #222222;
+	text-align: center;
+	height: 60px;
+}
+
+#ust_menu_sol {
+	display: flex;
+	align-items: center; /* Dikeyde ortalama */
+	color: #fff;
+	width: 600px;
+	height: 50px; /* Biraz daha yüksek, isteğe göre ayarlayabilirsiniz */
+	margin-left: 400px;
+	float: left;
+}
+
+#ust_menu_sol img {
+	margin-left: 20px;
+}
+#ust_menu_sol img:first-child {
+	margin-left: 0;
+}
+
+#ust_menu_sag {
+	display: flex;
+	float: right;
+	margin-right: 500px;
+	height: 50px;
+	align-items: center;
+}
+
+#ust_menu_sag img {
+	margin-left: 20px;
+}
+#temizle{
+	
+}
+
+.clear{
+	clear: both;
+}
+
+
+  #logo_ve_menu {
+	background-color: #FFFFFF;
+	  text-align: left;
+	  margin-left: 480px;
+}
+  #logo {
+	  margin-top: 30px;
+	background-color: #FFFFFF;
+	  float: left;
+}
+#menu {
+  background-color: #fff;
+  text-align: center;
+  height: 50px;
+  display: flex;
+  align-items: center;   /* Dikeyde ortalama */
+  justify-content: center;
+}
+
+#menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* Menü elemanları arası boşluk */
+  padding: 0;
+  margin: 0;
+}
+
+#menu ul li a {
+  text-decoration: none;  /* Alt çizgiyi kaldırır */
+  color: #000;
+  font-size: 16px;
+  line-height: 50px; /* Yükseklikle aynı yaparsan dikeyde ortalanır */
+  padding: 5px 10px;
+}
+
+#menu ul li a:hover {
+  color: #fff;
+  background-color: darkorange;
+  border-radius: 5px;
+}
+
+
