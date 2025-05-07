@@ -1,0 +1,181 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #EFEFDF;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 12px;
+	line-height: 150%;
+	color: #333;
+	margin-left: 0px;
+	margin-top: 40px;
+	margin-right: 0px;
+	margin-bottom: 40px;
+}
+#sayfa {
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#sayfa_ust {
+	background-color: #FFF;
+	padding: 5px;
+}
+#ust_mavi {
+	background-image: url(images/bg_ustMavi.png);
+	background-repeat: repeat-x;
+	height: 170px;
+}
+#ust_gri {
+	background-image: url(images/bg_ustGri.png);
+	background-repeat: repeat-x;
+	margin-top: 5px;
+	padding: 20px;
+	color: #FFF;
+}
+#sayfa_icerik {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#sayfa_sol {
+	float: left;
+	width: 350px;
+}
+#sayfa_sag {
+	background-color: #FFF;
+	float: right;
+	width: 540px;
+	padding: 40px;
+}
+.temizle {
+	clear: both;
+}
+#sayfa_alt {
+	background-color: #B9B99D;
+	padding: 40px;
+}
+#sayfa_altBilgi {
+	background-color: #323232;
+	padding: 40px;
+	color: #EFEFDF;
+	text-align: center;
+}
+a:link {
+	color: #F90;
+	text-decoration: none;
+}
+.cercevesiz{
+	outline: none;
+}
+.sol_kutu {
+	background-color: #EAEADA;
+	background-image: url(images/bg_solKutu.gif);
+	background-repeat: repeat-x;
+	padding: 0px;
+	height: 90px;
+	width: 340px;
+	margin-bottom: 10px;
+	border: 5px solid #CDCCBE;
+	cursor:pointer;
+}
+a:visited {
+	text-decoration: none;
+	color: #F90;
+}
+a:hover {
+	text-decoration: underline;
+	color: #F90;
+}
+a:active {
+	text-decoration: none;
+	color: #F90;
+}
+#ust_menu {
+	background-image: url(images/bg_navBar.gif);
+	background-repeat: no-repeat;
+	height: 29px;
+	width: 919px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	line-height: 29px;
+	color: #000;
+}
+#ust_logo {
+	height: 80px;
+	width: 200px;
+	left: 25px;
+	top: 45px;
+	position: relative;
+}
+#ust_karakter {
+	height: 210px;
+	width: 170px;
+	position: absolute;
+	z-index: 5;
+	left: 50%;
+	margin-left: 290px;
+	top: 90px;
+}
+.sol_kutu img {
+	float: left;
+	margin-right: 20px;
+	width: 80px;
+	height: 70px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.sol_kutu h1 {
+	font-size: 14px;
+	line-height: 14px;
+	color: #F60;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+.sol_kutu p {
+	line-height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+#ust_menu ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	color: #FFF;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+}
+#ust_menu ul li {
+	float: left;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#ust_menu ul li ul {
+	position: absolute;
+	margin-left: -10px;
+	background-color: #97C940;
+	width: 150px;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #060;
+	visibility: hidden;
+}
+#ust_menu ul li:hover ul {
+	visibility: visible;
+}
+#ust_menu ul li a {
+	color: #FFF;
+	text-decoration: none;
+	display: block;
+}
+#ust_menu ul li ul li:hover {
+	color: #060;
+	background-image: none;
+}
+#ust_menu ul li:hover {
+	background-image: url(images/bg_navOver.gif);
+	background-repeat: repeat-x;
+}
